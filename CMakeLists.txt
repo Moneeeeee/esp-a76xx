@@ -1,0 +1,24 @@
+idf_component_register(
+    SRCS
+        "_at_modem.cc"
+        "a76xx_ssl_transport.cc"
+        "a76xx_http.cc"
+        "a76xx_mqtt.cc"
+        "a76xx_udp.cc"
+        "web_socket.cc"
+        "tls_transport.cc"
+        "tcp_transport.cc"
+        "esp_http.cc"
+        "esp_mqtt.cc"
+        "esp_udp.cc"
+    INCLUDE_DIRS
+        "include"
+    PRIV_INCLUDE_DIRS
+        "."
+    REQUIRES
+        "esp_driver_gpio"
+        "esp_driver_uart"
+        "esp-tls"
+        "esp_http_client"
+        "mqtt"
+)
