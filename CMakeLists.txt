@@ -1,6 +1,6 @@
 idf_component_register(
     SRCS
-        "_at_modem.cc"
+        "a76xx_at_modem.cc"
         "a76xx_ssl_transport.cc"
         "a76xx_http.cc"
         "a76xx_mqtt.cc"
